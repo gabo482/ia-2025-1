@@ -1,0 +1,13 @@
+###### Read in data from other formats-  SPSS, DBF
+
+require(foreign)
+
+setwd("F:\\DataMining_R\\3_LectureData\\P_malaysia")
+
+## read in the dbf file
+
+x=read.dbf("P_malaysia.dbf")
+
+head(x)
+
+#for SPSS: read.spss
